@@ -1,0 +1,8 @@
+/* Editor styles for Divider Block preview */
+.wp-block-custom-divider__preview {
+    transition: all 120ms ease;
+    box-sizing: border-box;
+}
+.wp-block-custom-divider {
+    min-height: 28px;
+}

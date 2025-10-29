@@ -1,0 +1,12 @@
+/* Front-end styles for Divider Block */
+.wp-block-custom-divider {
+    margin: 1em 0;
+}
+.wp-block-custom-divider[aria-hidden="true"] {
+    pointer-events: none;
+}
+/* Offer a compact class consumers can override */
+.wp-block-custom-divider.is-style-small {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
