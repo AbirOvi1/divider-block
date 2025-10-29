@@ -1,41 +1,56 @@
 # Divider Block — Gutenberg (WordPress)
 
-A simple, accessible, and configurable Divider / Separator Gutenberg block plugin — no build tools required.
+A simple, accessible, and configurable **Divider / Separator Gutenberg block plugin** — built without any JavaScript build tools.  
+Created by **Abir Ovi**.
 
-## Features
-- Set thickness (px)
-- Choose color (Color Palette)
-- Choose line style (solid, dashed, dotted, double)
-- Set width (percent or px)
-- Alignment (left, center, right)
-- Toggle to make it a vertical divider
-- Accessible `role="separator"` and `aria-orientation`
+---
 
-## Installation
-1. Download or clone the repository into your WordPress `wp-content/plugins/` directory, e.g.:
+##  Features
+- Adjustable **thickness** (in pixels)
+- Custom **color** (via color palette)
+- Choose **line style**: solid, dashed, dotted, or double
+- Flexible **width** (percent or pixel-based)
+- Alignment options: **left**, **center**, or **right**
+- Optional **vertical divider**
+- Accessible markup with `role="separator"` and `aria-orientation`
 
+---
+
+##  Installation
+
+1. **Download** the ZIP file or clone this repository into your WordPress `wp-content/plugins/` directory:
    ```bash
    cd wp-content/plugins
    unzip divider-block-plugin.zip
-   ```
+Go to your WordPress Admin Dashboard → Plugins → Installed Plugins.
 
-2. Activate **Divider Block** from the WordPress admin → Plugins screen.
-3. Create or edit a post/page and search for **Divider** in the block inserter.
+Activate Divider Block.
 
-## Files included
-- `divider-block.php` — main plugin bootstrap + block registration
-- `src/editor.js` — block editor script (no build step; uses WP's global `wp` object)
-- `src/editor.css` — editor preview styles
-- `src/style.css` — front-end styles
-- `README.md` — this file
+Create or edit a post/page and search for Divider in the block inserter.
 
-## Notes & Tips
-- This plugin intentionally does **not** require a JS build step. It uses the global `wp` object provided by WordPress (works in modern WP versions that expose editor scripts).
-- If you prefer a build setup (ESNext, JSX), convert `src/editor.js` into ESNext + JSX and use `@wordpress/scripts`.
-- To add more presets (thickness, gradients, etc.) modify `src/editor.js` attributes and controls.
+Customize your divider using the right sidebar (Block Inspector).
 
-## License
-GPLv2 or later
+# Files Included
+File	Description
+divider-block.php	Main plugin bootstrap + block registration
+src/editor.js	Gutenberg editor block logic (no build step)
+src/editor.css	Styles for block preview in the editor
+src/style.css	Front-end styles for your divider
+README.md	This documentation
 
----
-Generated on 2025-10-29 by ChatGPT — ready to upload to your GitHub.
+#  Development Notes
+
+This plugin works without any build step — it uses the global wp object provided by WordPress.
+
+Fully compatible with modern WordPress versions (5.8+).
+
+You can easily extend it to use @wordpress/scripts if you prefer JSX or ESNext syntax.
+
+Ideal for learning Gutenberg block development or showcasing clean WordPress JavaScript.
+
+# Author : Abir Ovi
+
+
+# License
+
+Licensed under the GPLv2 or later.
